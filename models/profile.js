@@ -5,6 +5,8 @@ const Schema = mongoose.Schema
 const profileSchema = new Schema({
   name: String,
   avatar: String,
+  bag: String,
+  candies: { type: Schema.Types.ObjectId, ref: 'Candy'} 
 }, {
   timestamps: true
 })

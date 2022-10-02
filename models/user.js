@@ -3,8 +3,8 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const userSchema = new Schema({
-  email: String,
   googleId: String,
+  email: String,
   profile: { type: Schema.Types.ObjectId, ref: 'Profile' },
 }, {
   timestamps: true,
