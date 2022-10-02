@@ -4,7 +4,12 @@
 <section>
 	<p>From the kitchen of <%= candy.owner.name %>...</p>
   <h1><%= candy.name %> </h1>
-  <a href="/candies/<%= candy._id %>/edit">Edit This Candy</a>
+  <form action="/candies/<%= candy._id %>?_method=PUT" method="POST">
+    Name: 
+    <input type="text" name="name" autocomplete="off">
+  </label>
+  <button type="submit">Update Candy</button>
+</form>
   <a href="/candies"><button>Go Back</button></a>
 </section>
 
