@@ -27,7 +27,23 @@ function create(req, res) {
   })
 }
 
+function show(req, res) {
+  Candy.findById(req.params.id)
+  .populate("owner")
+  .then(candy => {
+    res.render('candies/show', {
+      candy,
+      title: "Candy Details"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/candies')
+  })
+}
+
 export {
   index,
-  create
+  create,
+  show,
 }
