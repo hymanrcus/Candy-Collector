@@ -1,0 +1,23 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Candies</h1>
+  <% if (user) { %>
+    <h2>Add a Candy!</h2>
+    <form action="/candies" method="POST">
+        Name: 
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <button type="submit">ADD Candy</button>
+    </form>
+  <% } %>
+  <h2>Your current candies</h2>
+	<ul>
+  <% candies.forEach(candy => { %>
+    <li><a href="/candies/<%= candy._id %>"> <%= candy.name %></a></li>
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>
