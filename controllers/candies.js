@@ -68,4 +68,27 @@ function update(req, res) {
     });
 }
 
-export { index, create, show, edit, update };
+function deleteCandy(req, res) {
+  Candy.findById(req.params.id)
+  .then(candy => {
+    if (candy.owner.equals(req.user.profile._id)) {
+      candy.delete()
+      .then(() => {
+        res.redirect('/candies')
+      })
+    }   
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/candies')
+  })
+}
+
+export {
+  index,
+  create, 
+  show, 
+  edit, 
+  update,
+  deleteCandy as delete,
+  };

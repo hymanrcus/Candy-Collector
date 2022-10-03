@@ -7,9 +7,10 @@ const router = Router()
 // GET localhost:3000/bags
 router.get('/', candiesCtrl.index)
 router.get('/:id', candiesCtrl.show)
-router.put('/:id',isLoggedIn, candiesCtrl.update)
 router.get('/:id/edit', candiesCtrl.edit)
+router.put('/:id',isLoggedIn, candiesCtrl.update)
 router.post('/', isLoggedIn, candiesCtrl.create)
+router.delete('/:id', isLoggedIn, candiesCtrl.delete)
 
 export {
   router

@@ -5,6 +5,9 @@
 	<p>From the kitchen of <%= candy.owner.name %>...</p>
   <h1><%= candy.name %> </h1>
   <a href="/candies/<%= candy._id %>/edit">Edit This Candy</a>
+  <form action="/candiess/<%= candy._id %>?_method=DELETE" method="POST">
+    <button class="btn" type="submit">Delete this candy</button>
+  </form>
   <a href="/candies"><button>Go Back</button></a>
 </section>
 
