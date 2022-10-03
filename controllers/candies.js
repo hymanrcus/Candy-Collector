@@ -71,9 +71,10 @@ function update(req, res) {
 function deleteCandy(req, res) {
   Candy.findById(req.params.id)
   .then(candy => {
+    console.log(candy.owner, req.user.profile._id)
     if (candy.owner.equals(req.user.profile._id)) {
       candy.delete()
-      .then(() => {
+      .then(deleteCandy => {
         res.redirect('/candies')
       })
     }   
