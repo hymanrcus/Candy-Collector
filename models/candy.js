@@ -4,14 +4,16 @@ const Schema = mongoose.Schema
 const reviewSchema = new Schema({
   text: String,
   rating: Number,
-  onwer: {type: Schema.Types.ObjectId, ref:"Profile"}
+  owner: {type: Schema.Types.ObjectId, ref:"Profile"}
+}, {
+  timestamps: true
 })
 
 const candySchema = new Schema({
   name: String,
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
   type: String,
-  review: [reviewSchema],
+  reviews: [reviewSchema],
 }, {
   timestamps: true
 })

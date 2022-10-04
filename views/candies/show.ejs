@@ -23,10 +23,40 @@
       <option value="2">BAD</option>
       <option value="3">MEH</option>
       <option value="4">GOOD</option>
-      <option value="TASTY" selected>TASTY</option>
+      <option value="5" selected>TASTY</option>
     </select>
     <button type="submit">Add Review</button>
   </form>
+	<% if (candy.reviews.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Review</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let total = 0 %> 
+      <% candy.reviews.forEach(function(review) { %>
+        <% total += review.rating %>
+        <tr>
+          <td><%= review.createdAt.toLocaleDateString() %></td>
+          <td><%= review.text %></td>
+          <td><%= review.rating %></td>
+        </tr>
+      <% }) %>
+      <tr>
+        <td colspan="2"></td>
+        <td>
+          <strong><%= (total / candy.reviews.length).toFixed(1) %></strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<% } else { %>
+  <h3>No Reviews Yet</h3>
+<% } %>
 </section>
 
 <%- include('../partials/footer') %>
