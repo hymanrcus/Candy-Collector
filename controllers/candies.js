@@ -90,7 +90,7 @@ function createReview(req, res) {
   console.log(req.body, "req.body")
   Candy.findById(req.params.id)
   .then(candy => {
-    candy.reviews.push(req.body)
+    candy.review.push(req.body)
     candy.save()
     .then(() => {
       res.redirect(`/candies/${candy._id}`)
