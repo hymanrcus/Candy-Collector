@@ -16,7 +16,6 @@ function index(req, res) {
 
 function create(req, res) {
   req.body.owner = req.user.profile._id;
-  // req.body.tasty = !!req.body.tasty;
   Candy.create(req.body)
     .then((candy) => {
       res.redirect("/candies");

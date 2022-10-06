@@ -6,9 +6,6 @@
   <h1><%= candy.name %> </h1>
   <% if (candy.owner.equals(user?.profile._id)) { %>
   <a href="/candies/<%= candy._id %>/edit">Edit This Candy</a>
-  <form action="/candies/<%= candy._id %>?_method=DELETE" method="POST">
-    <button class="btn" type="submit">Delete This Candy</button>
-  </form>
   <% } %>
   <a href="/candies"><button>Go Back</button></a>
   <h2> Candy Review</h2>
@@ -59,6 +56,11 @@
 <% } else { %>
   <h3>No Reviews Yet</h3>
 <% } %>
+<% if (candy.owner.equals(user?.profile._id)) { %>
+  <form action="/candies/<%= candy._id %>?_method=DELETE" method="POST">
+    <button class="btn" type="submit">Delete This Candy</button>
+  </form>
+  <% } %>
 </section>
 
 <%- include('../partials/footer') %>

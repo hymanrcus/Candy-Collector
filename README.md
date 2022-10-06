@@ -10,11 +10,11 @@
 
 ## Deployment link
 
-![Delploy Link](https://candy-collector.fly.dev)
+[Delploy Link](https://candy-collector.fly.dev)
 
  ## Planning Materials
 
-![Trello & ERD](https://trello.com/b/YVNNTyrw/candy-collector)
+[Trello & ERD](https://trello.com/b/YVNNTyrw/candy-collector)
 
 ## Technologies Used
 
