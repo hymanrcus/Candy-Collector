@@ -1,6 +1,6 @@
 # Candy Collector
 
-## Halloween is alomost here. Wouldn't it be great if you had a way to keep track of what is in your bag this year? 
+## Halloween is almost here. Wouldn't it be great if you had a way to keep track of what is in your candy bag this year? 
 
 ## Screenshot 1
 
@@ -13,11 +13,9 @@
  https://candy-collector.fly.dev
 
  ## Planning Materials
-Trello
-https://trello.com/b/YVNNTyrw/candy-collector
+Trello & ERD
 
-ERD
-https://lucid.app/lucidchart/b5eda7ff-65b3-4e71-96ee-982762fea7a2/edit?viewport_loc=-31%2C-32%2C1792%2C921%2C0_0&invitationId=inv_0f3fc5c1-ba53-43ea-961b-a31424172a78#
+https://trello.com/b/YVNNTyrw/candy-collector
 
 ## Technologies Used
 
