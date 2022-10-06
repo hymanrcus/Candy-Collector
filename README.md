@@ -8,6 +8,8 @@
 
 ## Screenshot 2
 
+![Screenshot2](public/screenshots/candy-collector2.png)
+
 ## Deployment link
 
 [Delploy Link](https://candy-collector.fly.dev)
