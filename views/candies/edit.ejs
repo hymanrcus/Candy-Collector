@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <section>
-	<p>From the kitchen of <%= candy.owner.name %>...</p>
+	<p>Inside<%= candy.owner.name %>'s bag...</p>
   <h1><%= candy.name %> </h1>
   <form action="/candies/<%= candy._id %>?_method=PUT" method="POST">
     Name: 
