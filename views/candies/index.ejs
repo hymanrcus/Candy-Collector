@@ -12,7 +12,7 @@
       <button type="submit">Add Candy</button>
     </form>
   <% } %>
-  <h2>Your current candies</h2>
+  <h2>Candies Collected:</h2>
 	<ul>
   <% candies.forEach(candy => { %>
     <li><a href="/candies/<%= candy._id %>"> <%= candy.name %></a></li>
