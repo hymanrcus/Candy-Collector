@@ -1,65 +1,21 @@
-# MEN Stack with OAuth Template
+# Candy Collector
 
-This is a MEN Stack template that includes OAuth.
+## Halloween is alomost here. Wouldn't it be great if you had a way that helped you keep track of what is in your bag this year? 
 
-Use this to go build things! 🚀
+## Screenshot 1
 
-## To Use This Template
+## Screenshot 2
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+## Deployment link
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+## Technologies Used
 
-Once you are in the project directory:
+Javascript, HTML, CSS, Azure, Google OAUTH, favicon.io, 
 
-```bash
-rm -rf .git
-```
+## Ice Box
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+I would like to give users an option to favorite a piece of candy.
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+I would like to implent a trade feature.
 
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Create a repo for this project on GitHub and add that remote to your project with `git remote add origin Your-repo-URL-here`.
-
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this `README.md` file and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
+I would like to let users see what candies are the most popular. 
