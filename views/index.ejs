@@ -2,7 +2,7 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>Hello, <%= user ? user.profile.name : "friend," %>If you would like to create an account and track what is inside your candy bag, sign in with Google.</h1>
+  <h1>Hello, <%= user ? user.profile.name : "friend," %> If you would like to create an account and track what is inside your candy bag, sign in with Google.</h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
