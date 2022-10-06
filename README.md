@@ -4,7 +4,7 @@
 
 ## Screenshot 1
 
-![Screenshot #1](public/screenshots/Screen Shot 2022-10-06 at 12.49.59.png)
+![Screenshot1](public/screenshots/candy-collector-1.png)
 
 ## Screenshot 2
 
@@ -13,7 +13,7 @@
 ![Delploy Link](https://candy-collector.fly.dev)
 
  ## Planning Materials
- 
+
 ![Trello & ERD](https://trello.com/b/YVNNTyrw/candy-collector)
 
 ## Technologies Used
