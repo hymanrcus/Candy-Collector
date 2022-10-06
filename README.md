@@ -10,6 +10,8 @@
 
 ## Deployment link
 
+ https://candy-collector.fly.dev
+
 ## Technologies Used
 
 Javascript, HTML, CSS, Azure, Google OAUTH, favicon.io 
