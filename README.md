@@ -20,7 +20,7 @@
 
 ## Technologies Used
 
-Javascript, HTML, CSS, Azure, Google OAUTH, favicon.io 
+Javascript, HTML, CSS, Azure, Google OAUTH, favicon.io, Experss, MongoDB
 
 ## Ice Box
 
